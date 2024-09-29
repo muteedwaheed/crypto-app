@@ -30,7 +30,10 @@ const Coins = () => {
           `${server}/coins/markets?vs_currency=${currency}&page=${page}`
         );
         setCoin(data);
-        setLoading(false); // Set loading to false after successfully fetching data
+        setLoading(false); 
+        console.log(data);
+        
+        // Set loading to false after successfully fetching data
       } catch (error) {
         setLoading(false);
         setError(true);
